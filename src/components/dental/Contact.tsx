@@ -15,7 +15,7 @@ const Contact = ({ onBookingClick }: ContactProps) => {
   // Google Maps links - Dr. Saleem's actual clinic location
   const mapDirectionsUrl = "https://share.google/jfAOUXSkIEwwTg9fn";
   // Embed using search query for accurate business location
-  const mapEmbedUrl = "https://maps.google.com/maps?q=Doctor+Saleem+Andraws+Dental+Clinic+Duhok&t=&z=17&ie=UTF8&iwloc=&output=embed";
+  const mapEmbedUrl = "https://www.google.com/maps?q=Dr.+Saleem+Andraws+Dental+Clinic,+Qazi+Mohammad+Road,+Duhok&t=&z=17&ie=UTF8&iwloc=&output=embed";
 
   return (
     <section id="contact" className="py-16 md:py-24 lg:py-28 bg-background relative overflow-hidden">
@@ -74,7 +74,7 @@ const Contact = ({ onBookingClick }: ContactProps) => {
                   href="https://wa.me/9647507816500"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={`group flex items-center gap-3 p-3 md:p-4 rounded-xl bg-card border border-border/50 hover:border-[#25D366]/50 hover:shadow-soft transition-all ${dir === "rtl" ? "flex-row-reverse text-right" : ""}`}
+                  className={`group flex min-h-[76px] w-full items-center gap-3 p-3 md:p-4 rounded-xl bg-card border border-border/50 hover:border-[#25D366]/50 hover:shadow-soft transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#25D366]/60 ${dir === "rtl" ? "flex-row-reverse text-right" : ""}`}
                 >
                   <div className="flex items-center justify-center w-10 h-10 md:w-12 md:h-12 rounded-lg bg-[#25D366]/10 group-hover:bg-[#25D366] transition-colors flex-shrink-0">
                     <WhatsAppIcon className="w-5 h-5 text-[#25D366] group-hover:text-white transition-colors" />
@@ -87,7 +87,7 @@ const Contact = ({ onBookingClick }: ContactProps) => {
 
                 <a
                   href="tel:07781665000"
-                  className={`group flex items-center gap-3 p-3 md:p-4 rounded-xl bg-card border border-border/50 hover:border-primary/30 hover:shadow-soft transition-all ${dir === "rtl" ? "flex-row-reverse text-right" : ""}`}
+                  className={`group flex min-h-[76px] w-full items-center gap-3 p-3 md:p-4 rounded-xl bg-card border border-border/50 hover:border-primary/30 hover:shadow-soft transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/50 ${dir === "rtl" ? "flex-row-reverse text-right" : ""}`}
                 >
                   <div className="flex items-center justify-center w-10 h-10 md:w-12 md:h-12 rounded-lg bg-primary/10 group-hover:bg-gradient-primary transition-colors flex-shrink-0">
                     <Smartphone className="w-5 h-5 text-primary group-hover:text-white transition-colors" />
@@ -121,7 +121,7 @@ const Contact = ({ onBookingClick }: ContactProps) => {
             transition={{ duration: 0.6 }}
             className={`relative ${dir === "rtl" ? "lg:col-start-1 lg:row-start-1" : ""}`}
           >
-            <div className="rounded-2xl overflow-hidden shadow-elevated h-full min-h-[300px] md:min-h-[400px]">
+            <div className="rounded-2xl overflow-hidden shadow-elevated h-full min-h-[340px] md:min-h-[440px]">
               <iframe
                 src={mapEmbedUrl}
                 width="100%"
@@ -130,18 +130,26 @@ const Contact = ({ onBookingClick }: ContactProps) => {
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Dr. Saleem Andraws Dental Clinic Location - Duhok"
-                className="md:min-h-[400px]"
+                title="Interactive Google Map: Dr. Saleem Andraws Dental Clinic in Duhok"
+                className="w-full min-h-[340px] md:min-h-[440px]"
               />
             </div>
 
             {/* Book appointment overlay */}
             <div className={`absolute bottom-3 md:bottom-4 ${dir === "rtl" ? "right-3 left-3 md:right-4 md:left-4" : "left-3 right-3 md:left-4 md:right-4"}`}>
               <div className={`p-3 md:p-4 rounded-xl bg-card/95 backdrop-blur-sm border border-border/50 shadow-card ${dir === "rtl" ? "text-right" : ""}`}>
-                <p className="font-semibold mb-2 text-sm md:text-base">{t("contact.readyToVisit")}</p>
-                <Button variant="teal" className="w-full" onClick={onBookingClick}>
-                  {t("contact.bookYourAppointment")}
-                </Button>
+                <p className="font-semibold mb-3 text-sm md:text-base">{t("contact.readyToVisit")}</p>
+                <div className={`grid gap-2 sm:grid-cols-2 ${dir === "rtl" ? "sm:grid-flow-dense" : ""}`}>
+                  <a href={mapDirectionsUrl} target="_blank" rel="noopener noreferrer" className="w-full">
+                    <Button variant="outline" className={`w-full gap-2 ${dir === "rtl" ? "flex-row-reverse" : ""}`}>
+                      <Navigation className="w-4 h-4" />
+                      {t("contact.getDirections")}
+                    </Button>
+                  </a>
+                  <Button variant="teal" className="w-full" onClick={onBookingClick}>
+                    {t("contact.bookYourAppointment")}
+                  </Button>
+                </div>
               </div>
             </div>
           </motion.div>

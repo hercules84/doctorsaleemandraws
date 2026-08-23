@@ -1,0 +1,21 @@
+{
+  "name": "Dr. Saleem Andraws Dental Clinic",
+  "short_name": "Saleem Andraws",
+  "description": "Dental clinic in Duhok, Iraq.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0f9d94",
+  "icons": [
+    {
+      "src": "/android-chrome-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

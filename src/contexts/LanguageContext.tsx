@@ -22,7 +22,7 @@ const translations: Record<Language, Record<string, string>> = {
     "nav.call": "Call",
     
     // Hero
-    "hero.badge": "Professional Dental Care in Duhok",
+    "hero.badge": "Professional Dentist & Dental Clinic in Duhok",
     "hero.title1": "Your Smile Is Our",
     "hero.title2": "Priority",
     "hero.description": "Experience exceptional dental care with Dr. Saleem Andraws. Combining advanced techniques with a gentle approach for your perfect smile.",
@@ -118,12 +118,17 @@ const translations: Record<Language, Record<string, string>> = {
     "contact.emailSubject": "Website enquiry",
     
     // Footer
-    "footer.description": "Professional dental care in Duhok. M.Sc. Oral Radiology, B.D.S. from University of Baghdad. Committed to providing exceptional care for your smile.",
+    "footer.description": "Dr. Saleem Andraws is a dentist and dental clinic in Duhok. M.Sc. Oral Radiology, B.D.S. from University of Baghdad, providing exceptional care for your smile.",
     "footer.quickLinks": "Quick Links",
     "footer.contact": "Contact",
     "footer.rights": "All rights reserved.",
     "footer.openDaily": "Open Daily: 3:00 PM - 9:00 PM (Except Friday)",
     "footer.location": "Location",
+    "footer.followUs": "Follow Us",
+    "footer.instagram": "Instagram",
+    "footer.facebook": "Facebook",
+    "footer.tripadvisor": "TripAdvisor",
+    "footer.linktree": "All Links",
     
     // Booking Modal
     "booking.title": "Book Appointment",
@@ -266,7 +271,7 @@ const translations: Record<Language, Record<string, string>> = {
     "nav.call": "اتصل",
     
     // Hero
-    "hero.badge": "رعاية أسنان احترافية في دهوك",
+    "hero.badge": "طبيب أسنان وعيادة أسنان متخصصة في دهوك",
     "hero.title1": "ابتسامتك هي",
     "hero.title2": "أولويتنا",
     "hero.description": "استمتع برعاية أسنان استثنائية مع الدكتور سليم أندراوس. نجمع بين التقنيات المتقدمة والنهج اللطيف لابتسامتك المثالية.",
@@ -362,12 +367,17 @@ const translations: Record<Language, Record<string, string>> = {
     "contact.emailSubject": "استفسار من الموقع",
     
     // Footer
-    "footer.description": "رعاية أسنان احترافية في دهوك. ماجستير أشعة الفم، بكالوريوس من جامعة بغداد. ملتزمون بتقديم رعاية استثنائية لابتسامتك.",
+    "footer.description": "عيادة أسنان وطبيب أسنان مختص في دهوك. ماجستير أشعة الفم، بكالوريوس من جامعة بغداد، ملتزمون بتقديم رعاية استثنائية لابتسامتك.",
     "footer.quickLinks": "روابط سريعة",
     "footer.contact": "اتصل بنا",
     "footer.rights": "جميع الحقوق محفوظة.",
     "footer.openDaily": "مفتوح يومياً: ٣:٠٠ - ٩:٠٠ مساءً (عدا الجمعة)",
     "footer.location": "الموقع",
+    "footer.followUs": "تابعنا",
+    "footer.instagram": "إنستغرام",
+    "footer.facebook": "فيسبوك",
+    "footer.tripadvisor": "تريب أدفايزر",
+    "footer.linktree": "كل الروابط",
     
     // Booking Modal
     "booking.title": "حجز موعد",
@@ -511,7 +521,7 @@ const translations: Record<Language, Record<string, string>> = {
     "nav.call": "پەیوەندی",
     
     // Hero
-    "hero.badge": "چاودێری ددان بە شێوەیەکی پیشەگەری لە دهۆک",
+    "hero.badge": "کلینیکی ددانی تایبەت لە دهۆک",
     "hero.title1": "بزەیی تۆ",
     "hero.title2": "گرنگە بۆمان",
     "hero.description": "چاودێری ددانی نایاب لەگەڵ دکتۆر سەلیم ئەندراوس. تەکنیکی پێشکەوتوو لەگەڵ ڕێبازێکی نەرم بۆ بزەیی تەواوت.",
@@ -607,11 +617,17 @@ const translations: Record<Language, Record<string, string>> = {
     "contact.emailSubject": "پرسیار لە ماڵپەڕەوە",
     
     // Footer
-    "footer.description": "چاودێری ددانی پیشەگەری لە دهۆک. ماستەر تیشکی دەم، بەکالۆریۆس لە زانکۆی بەغدا. پابەندین بە پێشکەشکردنی چاودێری نایاب بۆ بزەیت.",
+    "footer.description": "کلینیکی ددانی د. سلیم ئەندراوس لە دهۆک. ماستەر تیشکی دەم و بەکالۆریۆس لە زانکۆی بەغدا، پابەندین بە پێشکەشکردنی چاودێری نایاب بۆ بزەیت.",
     "footer.quickLinks": "لینکە خێراکان",
     "footer.contact": "پەیوەندی",
     "footer.rights": "هەموو مافەکان پارێزراون.",
     "footer.openDaily": "کراوەیە ڕۆژانە: ٣:٠٠ - ٩:٠٠ ئێوارە (جگە لە هەینی)",
+    "footer.location": "شوێن",
+    "footer.followUs": "شوێنکەوتنمان بکە",
+    "footer.instagram": "ئینستاگرام",
+    "footer.facebook": "فەیسبووک",
+    "footer.tripadvisor": "تریپ ئیدڤایزەر",
+    "footer.linktree": "هەموو بەستەرەکان",
     
     // Booking Modal
     "booking.title": "نۆرەی پزیشک",

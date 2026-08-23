@@ -33,40 +33,50 @@ const Footer = () => {
             <p className="text-background/70 text-sm leading-relaxed max-w-md mb-4">
               {t("footer.description")}
             </p>
-            <div className={`flex gap-3 ${dir === "rtl" ? "flex-row-reverse justify-end" : ""}`}>
-              <a 
-                href="https://www.facebook.com/doctor.saleem.diamond.dental.duhok/" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="flex items-center justify-center w-10 h-10 rounded-lg bg-background/10 hover:bg-primary transition-colors"
-              >
-                <Facebook className="w-4 h-4" />
-              </a>
-              <a 
-                href="https://www.instagram.com/dr.saleemandraws/?hl=en" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="flex items-center justify-center w-10 h-10 rounded-lg bg-background/10 hover:bg-primary transition-colors"
-              >
-                <Instagram className="w-4 h-4" />
-              </a>
-              <a 
-                href="https://www.tripadvisor.com/LocationPhotoDirectLink-g676534-i473690580-Duhok_Duhok_Province.html" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="flex items-center justify-center w-10 h-10 rounded-lg bg-background/10 hover:bg-primary transition-colors"
-                title="TripAdvisor"
-              >
-                <Star className="w-4 h-4" />
-              </a>
-              <a 
-                href="https://linktr.ee/saleem.andraws" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="flex items-center justify-center w-10 h-10 rounded-lg bg-background/10 hover:bg-primary transition-colors"
-              >
-                <ExternalLink className="w-4 h-4" />
-              </a>
+            <div>
+              <h4 className="font-semibold text-sm mb-3">{t("footer.followUs")}</h4>
+              <div className={`grid grid-cols-2 gap-2 max-w-sm ${dir === "rtl" ? "mr-auto" : ""}`}>
+                <a
+                  href="https://www.instagram.com/dr.saleemandraws/?hl=en"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Instagram: Dr. Saleem Andraws"
+                  className={`flex items-center gap-2 rounded-lg bg-background/10 px-3 py-2.5 text-sm hover:bg-primary transition-colors ${dir === "rtl" ? "flex-row-reverse" : ""}`}
+                >
+                  <Instagram className="w-4 h-4" />
+                  <span>{t("footer.instagram")}</span>
+                </a>
+                <a
+                  href="https://www.facebook.com/doctor.saleem.diamond.dental.duhok/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Facebook: Dr. Saleem Andraws Dental Clinic"
+                  className={`flex items-center gap-2 rounded-lg bg-background/10 px-3 py-2.5 text-sm hover:bg-primary transition-colors ${dir === "rtl" ? "flex-row-reverse" : ""}`}
+                >
+                  <Facebook className="w-4 h-4" />
+                  <span>{t("footer.facebook")}</span>
+                </a>
+                <a
+                  href="https://www.tripadvisor.com/LocationPhotoDirectLink-g676534-i473690580-Duhok_Duhok_Province.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="TripAdvisor"
+                  className={`flex items-center gap-2 rounded-lg bg-background/10 px-3 py-2.5 text-sm hover:bg-primary transition-colors ${dir === "rtl" ? "flex-row-reverse" : ""}`}
+                >
+                  <Star className="w-4 h-4" />
+                  <span>{t("footer.tripadvisor")}</span>
+                </a>
+                <a
+                  href="https://linktr.ee/saleem.andraws"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Linktree: Dr. Saleem Andraws"
+                  className={`flex items-center gap-2 rounded-lg bg-background/10 px-3 py-2.5 text-sm hover:bg-primary transition-colors ${dir === "rtl" ? "flex-row-reverse" : ""}`}
+                >
+                  <ExternalLink className="w-4 h-4" />
+                  <span>{t("footer.linktree")}</span>
+                </a>
+              </div>
             </div>
           </div>
 
