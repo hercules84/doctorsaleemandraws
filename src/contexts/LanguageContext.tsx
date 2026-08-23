@@ -701,7 +701,6 @@ const translations: Record<Language, Record<string, string>> = {
     "gallery.beforeAfterComparisonDesc": "بەراوردی تەنیشت یەکتر کە گۆڕانکارییەکی سەرنجڕاکێش پیشان دەدات.",
     "gallery.filterEducational": "پەروەردەیی",
     "gallery.educationalTag": "پەروەردەیی",
-    "footer.location": "شوێن",
     
     // FAQ
     "faq.badge": "پرسیارە باوەکان",
