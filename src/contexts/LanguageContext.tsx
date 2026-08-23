@@ -37,6 +37,20 @@ const translations: Record<Language, Record<string, string>> = {
     "hero.experience": "Experience",
     "hero.years": "15+ Years",
     "hero.happyPatients": "500+ Happy Patients",
+
+    // Local dental care
+    "local.badge": "Dentist & Dental Clinic in Duhok",
+    "local.title1": "Trusted Dental Care for",
+    "local.title2": "Duhok",
+    "local.description": "Dr. Saleem Andraws Dental Clinic provides patient-focused dental care in Duhok, with clear guidance from your first consultation through treatment and follow-up.",
+    "local.bookConsultation": "Book a Consultation",
+    "local.callClinic": "Call the Clinic",
+    "local.credentialsTitle": "Qualified Dental Care",
+    "local.credentialsText": "Dr. Saleem Andraws holds an M.Sc. in Oral Radiology and a B.D.S. from the University of Baghdad.",
+    "local.servicesTitle": "Comprehensive Dentistry",
+    "local.servicesText": "Explore everyday, restorative, cosmetic, orthodontic, and family dental care at our Duhok clinic.",
+    "local.locationTitle": "Visit Our Clinic in Duhok",
+    "local.locationText": "Find Dr. Saleem Andraws Dental Clinic on Qazi Mohammad Road, Duhok Governorate, Iraq.",
     
     // Services
     "services.badge": "Our Services",
@@ -286,6 +300,20 @@ const translations: Record<Language, Record<string, string>> = {
     "hero.experience": "الخبرة",
     "hero.years": "+١٥ سنة",
     "hero.happyPatients": "+٥٠٠ مريض سعيد",
+
+    // Local dental care
+    "local.badge": "طبيب أسنان وعيادة أسنان في دهوك",
+    "local.title1": "رعاية أسنان موثوقة لأهالي",
+    "local.title2": "دهوك",
+    "local.description": "تقدم عيادة الدكتور سليم أندراوس رعاية أسنان تركز على المريض في دهوك، مع إرشاد واضح من الاستشارة الأولى حتى العلاج والمتابعة.",
+    "local.bookConsultation": "احجز استشارة",
+    "local.callClinic": "اتصل بالعيادة",
+    "local.credentialsTitle": "رعاية أسنان مؤهلة",
+    "local.credentialsText": "الدكتور سليم أندراوس حاصل على ماجستير في أشعة الفم وبكالوريوس في طب الأسنان من جامعة بغداد.",
+    "local.servicesTitle": "طب أسنان شامل",
+    "local.servicesText": "تعرف على خدمات العناية اليومية والترميمية والتجميلية وتقويم الأسنان وطب أسنان الأسرة في عيادتنا في دهوك.",
+    "local.locationTitle": "زر عيادتنا في دهوك",
+    "local.locationText": "تقع عيادة الدكتور سليم أندراوس لطب الأسنان في شارع قاضي محمد، محافظة دهوك، العراق.",
     
     // Services
     "services.badge": "خدماتنا",
@@ -536,6 +564,20 @@ const translations: Record<Language, Record<string, string>> = {
     "hero.experience": "ئەزموون",
     "hero.years": "+١٥ ساڵ",
     "hero.happyPatients": "+٥٠٠ نەخۆشی دڵخۆش",
+
+    // Local dental care
+    "local.badge": "پزیشکی ددان و کلینیکی ددان لە دهۆک",
+    "local.title1": "چاودێری ددانی متمانەپێکراو بۆ",
+    "local.title2": "دهۆک",
+    "local.description": "کلینیکی ددانی د. سلیم ئەندراوس چاودێری ددانی نەخۆش-ناوەندی لە دهۆک پێشکەش دەکات، لە یەکەم ڕاوێژە تا چارەسەر و شوێنکەوتن.",
+    "local.bookConsultation": "ڕاوێژێک دابنێ",
+    "local.callClinic": "پەیوەندی بە کلینیکەوە بکە",
+    "local.credentialsTitle": "چاودێری ددانی شارەزا",
+    "local.credentialsText": "د. سلیم ئەندراوس ماستەری تیشکی دەم و بەکالۆریۆسی ددانی لە زانکۆی بەغدایە.",
+    "local.servicesTitle": "خزمەتگوزاری ددانی تەواو",
+    "local.servicesText": "خزمەتگوزارییەکانی چاودێری ڕۆژانە، ترمیمی، جوانکاری، ڕاستکردنەوە و چاودێری ددانی خێزان لە کلینیکەکەمان لە دهۆک بدۆزەرەوە.",
+    "local.locationTitle": "سەردانی کلینیکەکەمان لە دهۆک بکە",
+    "local.locationText": "کلینیکی ددانی د. سلیم ئەندراوس لە شەقامی قازی محەممەد، پارێزگای دهۆک، عێراقە.",
     
     // Services
     "services.badge": "خزمەتگوزارییەکانمان",
