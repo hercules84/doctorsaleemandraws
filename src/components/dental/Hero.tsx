@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { Calendar, Phone, Clock, MapPin, Award, GraduationCap } from "lucide-react";
+import { Calendar, Smartphone, Clock, MapPin, Award, GraduationCap } from "lucide-react";
+import { WhatsAppIcon } from "@/components/icons/WhatsAppIcon";
 import { useLanguage } from "@/contexts/LanguageContext";
 import drSaleem from "@/assets/dr-saleem.jpg";
 
@@ -64,15 +65,21 @@ const Hero = ({ onBookingClick }: HeroProps) => {
             </div>
 
             {/* CTA Buttons */}
-            <div className={`flex flex-col sm:flex-row gap-4 mb-10 ${dir === "rtl" ? "sm:flex-row-reverse" : ""}`}>
+            <div className={`flex flex-col sm:flex-row sm:flex-wrap gap-4 mb-10 ${dir === "rtl" ? "sm:flex-row-reverse" : ""}`}>
               <Button variant="teal" size="lg" onClick={onBookingClick} className={`gap-2 ${dir === "rtl" ? "flex-row-reverse" : ""}`}>
                 <Calendar className="w-5 h-5" />
                 {t("hero.bookBtn")}
               </Button>
-              <a href="tel:07507816500">
-                <Button variant="tealOutline" size="lg" className={`w-full sm:w-auto gap-2 ${dir === "rtl" ? "flex-row-reverse" : ""}`}>
-                  <Phone className="w-5 h-5" />
-                  {t("hero.callBtn")}
+              <a href="https://wa.me/9647507816500" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
+                <Button variant="tealOutline" size="lg" className={`w-full gap-2 ${dir === "rtl" ? "flex-row-reverse" : ""}`}>
+                  <WhatsAppIcon className="w-5 h-5 text-[#25D366]" />
+                  WhatsApp: 07507816500
+                </Button>
+              </a>
+              <a href="tel:07781665000" className="w-full sm:w-auto">
+                <Button variant="tealOutline" size="lg" className={`w-full gap-2 ${dir === "rtl" ? "flex-row-reverse" : ""}`}>
+                  <Smartphone className="w-5 h-5" />
+                  {t("nav.call")}: 07781665000
                 </Button>
               </a>
             </div>

@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { Menu, X, Phone, Calendar, Globe, ChevronDown } from "lucide-react";
+import { Menu, X, Calendar, Globe, ChevronDown, Smartphone } from "lucide-react";
+import { WhatsAppIcon } from "@/components/icons/WhatsAppIcon";
 import { useLanguage } from "@/contexts/LanguageContext";
 import clinicLogo from "@/assets/clinic-logo.png";
 
@@ -98,10 +99,16 @@ const Navbar = ({ onBookingClick }: NavbarProps) => {
               </AnimatePresence>
             </div>
 
-            <a href="tel:07507816500">
+            <a href="https://wa.me/9647507816500" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp 07507816500">
               <Button variant="ghost" size="sm" className={`gap-2 ${dir === "rtl" ? "flex-row-reverse" : ""}`}>
-                <Phone className="w-4 h-4" />
-                <span className="hidden xl:inline">07507816500</span>
+                <WhatsAppIcon className="w-4 h-4 text-[#25D366]" />
+                <span className="hidden 2xl:inline">07507816500</span>
+              </Button>
+            </a>
+            <a href="tel:07781665000" aria-label="Mobile phone 07781665000">
+              <Button variant="ghost" size="sm" className={`gap-2 ${dir === "rtl" ? "flex-row-reverse" : ""}`}>
+                <Smartphone className="w-4 h-4" />
+                <span className="hidden 2xl:inline">07781665000</span>
               </Button>
             </a>
             <Button variant="teal" size="sm" onClick={onBookingClick} className={`gap-2 ${dir === "rtl" ? "flex-row-reverse" : ""}`}>
@@ -163,10 +170,16 @@ const Navbar = ({ onBookingClick }: NavbarProps) => {
                   </a>
                 ))}
                 <div className="pt-4 border-t border-border flex flex-col gap-3">
-                  <a href="tel:07507816500" className="w-full">
+                  <a href="https://wa.me/9647507816500" target="_blank" rel="noopener noreferrer" className="w-full">
                     <Button variant="outline" className={`w-full justify-center gap-2 ${dir === "rtl" ? "flex-row-reverse" : ""}`}>
-                      <Phone className="w-4 h-4" />
-                      {t("nav.call")}: 07507816500
+                      <WhatsAppIcon className="w-4 h-4 text-[#25D366]" />
+                      WhatsApp: 07507816500
+                    </Button>
+                  </a>
+                  <a href="tel:07781665000" className="w-full">
+                    <Button variant="outline" className={`w-full justify-center gap-2 ${dir === "rtl" ? "flex-row-reverse" : ""}`}>
+                      <Smartphone className="w-4 h-4" />
+                      {t("nav.call")}: 07781665000
                     </Button>
                   </a>
                   <Button variant="teal" className={`w-full justify-center gap-2 ${dir === "rtl" ? "flex-row-reverse" : ""}`} onClick={() => { setMobileMenuOpen(false); onBookingClick(); }}>
