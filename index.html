@@ -23,28 +23,21 @@
     {
       "@context": "https://schema.org",
       "@type": "Dentist",
+      "@id": "https://www.doctorsaleem.com/#dentist",
       "name": "Dr. Saleem Andraws Dental Clinic",
-      "alternateName": "عيادة دكتور سليم اندراوس لطب الأسنان",
-      "image": "https://www.doctorsaleem.com/saleem-andraws-favicon.png",
+      "alternateName": [
+        "عيادة دكتور سليم اندراوس لطب الأسنان",
+        "کلینیکی ددانی د. سلیم ئەندراوس"
+      ],
+      "description": "Dentist and dental clinic in Duhok, Iraq, providing preventive, restorative, cosmetic, orthodontic, implant, endodontic, and family dental care.",
+      "url": "https://www.doctorsaleem.com/",
+      "mainEntityOfPage": "https://www.doctorsaleem.com/",
       "logo": "https://www.doctorsaleem.com/saleem-andraws-favicon.png",
-      "url": "https://www.doctorsaleem.com",
-      "telephone": "+9647507816500",
-      "contactPoint": [
-        {"@type": "ContactPoint", "telephone": "+9647507816500", "contactType": "WhatsApp"},
-        {"@type": "ContactPoint", "telephone": "+9647781665000", "contactType": "customer service"}
+      "image": [
+        "https://www.doctorsaleem.com/saleem-andraws-favicon.png"
       ],
-      "description": "Dentist and dental clinic in Duhok, Kurdistan Region, Iraq, offering implants, cosmetic dentistry, orthodontics, root canal treatment, oral radiology, dental cleaning, and pediatric dentistry.",
+      "telephone": "+9647781665000",
       "email": "dr.saleemo@gmail.com",
-      "hasMap": "https://share.google/jfAOUXSkIEwwTg9fn",
-      "sameAs": [
-        "https://www.instagram.com/dr.saleemandraws/?hl=en",
-        "https://www.facebook.com/doctor.saleem.diamond.dental.duhok/",
-        "https://linktr.ee/saleem.andraws"
-      ],
-      "areaServed": {
-        "@type": "City",
-        "name": "Duhok"
-      },
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Qazi Mohammad Road",
@@ -58,6 +51,7 @@
         "latitude": 36.86810,
         "longitude": 42.96118
       },
+      "hasMap": "https://share.google/jfAOUXSkIEwwTg9fn",
       "openingHoursSpecification": [
         {
           "@type": "OpeningHoursSpecification",
@@ -72,14 +66,50 @@
           "closes": "00:00:00"
         }
       ],
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "telephone": "+9647781665000",
+          "contactType": "appointments",
+          "availableLanguage": ["English", "Arabic", "Kurdish"]
+        },
+        {
+          "@type": "ContactPoint",
+          "telephone": "+9647507816500",
+          "contactType": "customer service",
+          "url": "https://wa.me/9647507816500",
+          "availableLanguage": ["English", "Arabic", "Kurdish"]
+        }
+      ],
+      "areaServed": {
+        "@type": "City",
+        "name": "Duhok"
+      },
       "priceRange": "$$",
       "medicalSpecialty": "Dentistry",
-      "founder": {
+      "employee": {
         "@type": "Person",
         "name": "Dr. Saleem Andraws",
-        "jobTitle": "Dental Specialist",
-        "alumniOf": "University of Baghdad"
-      }
+        "jobTitle": "Dentist",
+        "alumniOf": {
+          "@type": "CollegeOrUniversity",
+          "name": "University of Baghdad"
+        }
+      },
+      "sameAs": [
+        "https://www.instagram.com/dr.saleemandraws/?hl=en",
+        "https://www.facebook.com/doctor.saleem.diamond.dental.duhok/",
+        "https://linktr.ee/saleem.andraws"
+      ],
+      "availableService": [
+        {"@type": "Service", "name": "Dental implants"},
+        {"@type": "Service", "name": "Cosmetic dentistry"},
+        {"@type": "Service", "name": "Teeth whitening"},
+        {"@type": "Service", "name": "Orthodontics"},
+        {"@type": "Service", "name": "Root canal treatment"},
+        {"@type": "Service", "name": "Dental cleaning"},
+        {"@type": "Service", "name": "Pediatric dentistry"}
+      ]
     }
     </script>
     <script type="application/ld+json">
