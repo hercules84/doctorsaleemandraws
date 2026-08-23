@@ -36,10 +36,10 @@ const ChatBot = () => {
       ? "ئەمە نرخەکانمانە:\n\n• سپیکردنەوەی ددان: لە 150$ دەست پێدەکات\n• چاندنی ددان: لە 800$ دەست پێدەکات\n• ددانی جوانکاری: لە 300$ دەست پێدەکات\n• چارەسەری کەناڵی ڕەگ: لە 250$ دەست پێدەکات\n• ڕاستکردنەوەی ددان: لە 1000$ دەست پێدەکات\n• تیشکی دەم: لە 50$ دەست پێدەکات\n• پاککردنەوەی ددان: لە 75$ دەست پێدەکات\n• ددانی منداڵان: لە 50$ دەست پێدەکات\n\nنرخەکان لەوانەیە جیاواز بن بەپێی حاڵەتی کەسی. دەتەوێت نۆرەی پزیشک دابنێیت؟"
       : "Here are our starting prices:\n\n• Teeth Whitening: from $150\n• Dental Implants: from $800\n• Cosmetic Dentistry: from $300\n• Root Canal: from $250\n• Orthodontics: from $1000\n• Oral Radiology: from $50\n• Dental Cleaning: from $75\n• Pediatric Dentistry: from $50\n\nPrices may vary based on individual cases. Would you like to schedule a consultation?",
     hours: language === "ar"
-      ? "عيادتنا مفتوحة:\n\n🕒 يومياً: 3:00 - 9:00 مساءً\n🚫 مغلق أيام الجمعة\n\n📍 الموقع: دهوك - KRO - فوق شيركو للمكسرات\n💬 واتساب: 07507816500\n📱 الهاتف: 07781665000\n\nهل تريد حجز موعد؟"
+      ? "عيادتنا مفتوحة:\n\n🕒 يومياً: 3:00 - 9:00 مساءً\n🚫 مغلق أيام الجمعة\n\n📍 الموقع: شارع قاضي محمد، دهوك، محافظة دهوك، ٤٢٠٠١، العراق\n💬 واتساب: 07507816500\n📱 الهاتف: 07781665000\n\nهل تريد حجز موعد؟"
       : language === "ku"
-      ? "کلینیکەکەمان کراوەیە:\n\n🕒 ڕۆژانە: ٣:٠٠ - ٩:٠٠ ئێوارە\n🚫 داخراوە ڕۆژی هەینی\n\n📍 شوێن: دهۆک - KRO - سەرووی شیرکۆ نەتس\n💬 واتساپ: 07507816500\n📱 مۆبایل: 07781665000\n\nدەتەوێت نۆرەی پزیشک دابنێیت؟"
-      : "Our clinic is open:\n\n🕒 Daily: 3:00 PM - 9:00 PM\n🚫 Closed on Fridays\n\n📍 Location: Duhok - KRO - Above Sherko Nuts\n💬 WhatsApp: 07507816500\n📱 Mobile: 07781665000\n\nWould you like to book an appointment?",
+      ? "کلینیکەکەمان کراوەیە:\n\n🕒 ڕۆژانە: ٣:٠٠ - ٩:٠٠ ئێوارە\n🚫 داخراوە ڕۆژی هەینی\n\n📍 شوێن: شەقامی قازی محەممەد، دهۆک، پارێزگای دهۆک، ٤٢٠٠١، عێراق\n💬 واتساپ: 07507816500\n📱 مۆبایل: 07781665000\n\nدەتەوێت نۆرەی پزیشک دابنێیت؟"
+      : "Our clinic is open:\n\n🕒 Daily: 3:00 PM - 9:00 PM\n🚫 Closed on Fridays\n\n📍 Location: Qazi Mohammad Road, Duhok, Duhok Governorate, 42001, Iraq\n💬 WhatsApp: 07507816500\n📱 Mobile: 07781665000\n\nWould you like to book an appointment?",
     booking: language === "ar"
       ? "يمكنك حجز موعد عبر:\n\n1️⃣ انقر على زر 'حجز موعد' في هذه الصفحة\n2️⃣ الهاتف: 07781665000\n3️⃣ واتساب: 07507816500\n4️⃣ البريد الإلكتروني: dr.saleemo@gmail.com\n\nسنؤكد موعدك خلال 24 ساعة!"
       : language === "ku"

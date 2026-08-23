@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { MapPin, Clock, ExternalLink, Navigation, Smartphone } from "lucide-react";
 import { WhatsAppIcon } from "@/components/icons/WhatsAppIcon";
+import EmailContactForm from "@/components/dental/EmailContactForm";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 interface ContactProps {
@@ -97,6 +98,8 @@ const Contact = ({ onBookingClick }: ContactProps) => {
                   </div>
                 </a>
               </div>
+
+              <EmailContactForm />
             </div>
 
             {/* Action Buttons */}
