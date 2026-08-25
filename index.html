@@ -59,27 +59,35 @@
           "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Saturday", "Sunday"],
           "opens": "15:00:00",
           "closes": "21:00:00"
-        },
-        {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": "Friday",
-          "opens": "00:00:00",
-          "closes": "00:00:00"
         }
       ],
       "contactPoint": [
         {
           "@type": "ContactPoint",
+          "name": "Emergency dental phone",
           "telephone": "+9647781665000",
-          "contactType": "appointments",
-          "availableLanguage": ["English", "Arabic", "Kurdish"]
+          "contactType": "emergency dental inquiries",
+          "availableLanguage": ["English", "Arabic", "Kurdish"],
+          "hoursAvailable": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Saturday", "Sunday"],
+            "opens": "15:00:00",
+            "closes": "21:00:00"
+          }
         },
         {
           "@type": "ContactPoint",
+          "name": "WhatsApp appointments",
           "telephone": "+9647507816500",
-          "contactType": "customer service",
+          "contactType": "appointment scheduling and WhatsApp",
           "url": "https://wa.me/9647507816500",
-          "availableLanguage": ["English", "Arabic", "Kurdish"]
+          "availableLanguage": ["English", "Arabic", "Kurdish"],
+          "hoursAvailable": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Saturday", "Sunday"],
+            "opens": "15:00:00",
+            "closes": "21:00:00"
+          }
         }
       ],
       "areaServed": {
@@ -155,7 +163,7 @@
           "name": "How can I book an appointment?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "You can book an appointment through the website's booking form, by calling 07781665000, or via WhatsApp at 07507816500."
+            "text": "For appointments, use the website booking form or WhatsApp at 07507816500. For urgent dental concerns during clinic hours, call 07781665000."
           }
         },
         {

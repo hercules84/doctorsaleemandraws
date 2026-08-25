@@ -74,7 +74,7 @@ const Contact = ({ onBookingClick }: ContactProps) => {
                   href="https://wa.me/9647507816500"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={`group flex min-h-[76px] w-full items-center gap-3 p-3 md:p-4 rounded-xl bg-card border border-border/50 hover:border-[#25D366]/50 hover:shadow-soft transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#25D366]/60 ${dir === "rtl" ? "flex-row-reverse text-right" : ""}`}
+                  className={`group flex min-h-[92px] w-full items-center gap-3 p-3 md:p-4 rounded-xl bg-card border border-border/50 hover:border-[#25D366]/50 hover:shadow-soft transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#25D366]/60 ${dir === "rtl" ? "flex-row-reverse text-right" : ""}`}
                 >
                   <div className="flex items-center justify-center w-10 h-10 md:w-12 md:h-12 rounded-lg bg-[#25D366]/10 group-hover:bg-[#25D366] transition-colors flex-shrink-0">
                     <WhatsAppIcon className="w-5 h-5 text-[#25D366] group-hover:text-white transition-colors" />
@@ -87,14 +87,15 @@ const Contact = ({ onBookingClick }: ContactProps) => {
 
                 <a
                   href="tel:07781665000"
-                  className={`group flex min-h-[76px] w-full items-center gap-3 p-3 md:p-4 rounded-xl bg-card border border-border/50 hover:border-primary/30 hover:shadow-soft transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/50 ${dir === "rtl" ? "flex-row-reverse text-right" : ""}`}
+                  className={`group flex min-h-[92px] w-full items-center gap-3 p-3 md:p-4 rounded-xl bg-card border border-border/50 hover:border-destructive/50 hover:shadow-soft transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-destructive/50 ${dir === "rtl" ? "flex-row-reverse text-right" : ""}`}
                 >
-                  <div className="flex items-center justify-center w-10 h-10 md:w-12 md:h-12 rounded-lg bg-primary/10 group-hover:bg-gradient-primary transition-colors flex-shrink-0">
-                    <Smartphone className="w-5 h-5 text-primary group-hover:text-white transition-colors" />
+                  <div className="flex items-center justify-center w-10 h-10 md:w-12 md:h-12 rounded-lg bg-destructive/10 group-hover:bg-destructive transition-colors flex-shrink-0">
+                    <Smartphone className="w-5 h-5 text-destructive group-hover:text-white transition-colors" />
                   </div>
                   <div className="min-w-0">
-                    <p className="font-semibold text-sm md:text-base">{t("nav.call")}</p>
+                    <p className="font-semibold text-sm md:text-base">{t("contact.emergencyPhone")}</p>
                     <p dir="ltr" className="text-muted-foreground text-sm">07781665000</p>
+                    <p className="text-xs text-muted-foreground">{t("contact.emergencyNote")}</p>
                   </div>
                 </a>
               </div>
